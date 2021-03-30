@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="pythonpython的概述  python的语言的主要特点   简单易学 面向对象 功能强大（可拓展，可嵌入） 具有良好的跨平台特性（可移植） 免费     适用范围    web开发 自动化运维 网络爬虫 游戏开发    python的解释器  Python解释器是指实现Python语法的解释程序·解释器类型主要有5种  CPytho  原始的﹑标准的Python实现方式 JythonPyt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/03/30/python/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="pythonpython的概述  python的语言的主要特点   简单易学 面向对象 功能强大（可拓展，可嵌入） 具有良好的跨平台特性（可移植） 免费     适用范围    web开发 自动化运维 网络爬虫 游戏开发    python的解释器  Python解释器是指实现Python语法的解释程序·解释器类型主要有5种  CPytho  原始的﹑标准的Python实现方式 JythonPyt">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-03-30T13:54:07.808Z">
+<meta property="article:modified_time" content="2021-03-09T16:06:13.425Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/03/30/python/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-10 00:06:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-03-30T13:54:07.808Z" title="Created 2021-03-30 21:54:07">2021-03-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-03-09T16:06:13.425Z" title="Updated 2021-03-10 00:06:13">2021-03-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h2 id="python的概述"><a href="#python的概述" class="headerlink" title="python的概述"></a>python的概述</h2><p><img src="C:\Users\Mrbin\AppData\Roaming\Typora\typora-user-images\image-20210309220536067.png" alt="image-20210309220536067"></p>
+<blockquote>
+<p>python的语言的主要特点</p>
+</blockquote>
+<ul>
+<li>简单易学</li>
+<li>面向对象</li>
+<li>功能强大（可拓展，可嵌入）</li>
+<li>具有良好的跨平台特性（可移植）</li>
+<li>免费  </li>
+</ul>
+<blockquote>
+<p>适用范围 </p>
+</blockquote>
+<ul>
+<li>web开发</li>
+<li>自动化运维</li>
+<li>网络爬虫</li>
+<li>游戏开发</li>
+<li><img src="C:\Users\Mrbin\AppData\Roaming\Typora\typora-user-images\image-20210309221057051.png" alt="image-20210309221057051"></li>
+</ul>
+<blockquote>
+<p>python的解释器</p>
+</blockquote>
+<p><strong>Python解释器是指实现Python语法的解释程序·解释器类型主要有5种</strong></p>
+<ul>
+<li><h6 id="CPytho-原始的﹑标准的Python实现方式"><a href="#CPytho-原始的﹑标准的Python实现方式" class="headerlink" title="CPytho  原始的﹑标准的Python实现方式"></a>CPytho  原始的﹑标准的Python实现方式</h6></li>
+<li><h6 id="JythonPython-在Java环境中的实现方式"><a href="#JythonPython-在Java环境中的实现方式" class="headerlink" title="JythonPython  在Java环境中的实现方式"></a>JythonPython  在Java环境中的实现方式</h6></li>
+<li><h6 id="lronPytho-Python在微软的-NET平台上的实现方式"><a href="#lronPytho-Python在微软的-NET平台上的实现方式" class="headerlink" title="lronPytho      Python在微软的.NET平台上的实现方式"></a>lronPytho      Python在微软的.NET平台上的实现方式</h6></li>
+<li><h6 id="PyPy-用Python实现的Python解释器"><a href="#PyPy-用Python实现的Python解释器" class="headerlink" title="PyPy   用Python实现的Python解释器"></a>PyPy   用Python实现的Python解释器</h6></li>
+<li><h6 id="lPython-基于CPython之上的一个交互式解释器"><a href="#lPython-基于CPython之上的一个交互式解释器" class="headerlink" title="lPython    基于CPython之上的一个交互式解释器"></a>lPython    基于CPython之上的一个交互式解释器</h6></li>
+</ul>
+<h2 id="python基本语法"><a href="#python基本语法" class="headerlink" title="python基本语法"></a>python基本语法</h2><h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><ul>
+<li><h6 id="模块名尽量短小，并且全部使用小写字母，不鼓励用下划线。"><a href="#模块名尽量短小，并且全部使用小写字母，不鼓励用下划线。" class="headerlink" title="模块名尽量短小，并且全部使用小写字母，不鼓励用下划线。"></a>模块名尽量短小，并且全部使用小写字母，不鼓励用下划线。</h6></li>
+<li><h6 id="包名尽量短小，并且全部使用小写字母，不推荐使用下划线。"><a href="#包名尽量短小，并且全部使用小写字母，不推荐使用下划线。" class="headerlink" title="包名尽量短小，并且全部使用小写字母，不推荐使用下划线。"></a>包名尽量短小，并且全部使用小写字母，不推荐使用下划线。</h6></li>
+<li><h6 id="类名采用单词首字母大写形式-大写驼峰-。ThreadMixIn、BrokenBarrierError"><a href="#类名采用单词首字母大写形式-大写驼峰-。ThreadMixIn、BrokenBarrierError" class="headerlink" title="类名采用单词首字母大写形式(大写驼峰)。ThreadMixIn、BrokenBarrierError"></a>类名采用单词首字母大写形式(大写驼峰)。ThreadMixIn、BrokenBarrierError</h6></li>
+<li><h6 id="模块内部的类采用下划线“-”-Pascal风格的类名组成。-BorrowBook"><a href="#模块内部的类采用下划线“-”-Pascal风格的类名组成。-BorrowBook" class="headerlink" title="模块内部的类采用下划线“_”+Pascal风格的类名组成。_BorrowBook"></a>模块内部的类采用下划线“_”+Pascal风格的类名组成。_BorrowBook</h6></li>
+<li><h6 id="函数、类的属性和方法的命名规则同模块类似-但可以使用下划线分隔多个单词。"><a href="#函数、类的属性和方法的命名规则同模块类似-但可以使用下划线分隔多个单词。" class="headerlink" title="函数、类的属性和方法的命名规则同模块类似,但可以使用下划线分隔多个单词。"></a>函数、类的属性和方法的命名规则同模块类似,但可以使用下划线分隔多个单词。</h6></li>
+<li><h6 id="常量命名时采用全部大写字母，不推荐使用下划线。PIE"><a href="#常量命名时采用全部大写字母，不推荐使用下划线。PIE" class="headerlink" title="常量命名时采用全部大写字母，不推荐使用下划线。PIE"></a>常量命名时采用全部大写字母，不推荐使用下划线。PIE</h6></li>
+<li><h6 id="变量建议采用全部小写字母-可以有数字）命名。"><a href="#变量建议采用全部小写字母-可以有数字）命名。" class="headerlink" title="变量建议采用全部小写字母(可以有数字）命名。"></a>变量建议采用全部小写字母(可以有数字）命名。</h6></li>
+<li><h6 id="使用单下划线“”开头的模块变量或者函数是受保护的。"><a href="#使用单下划线“”开头的模块变量或者函数是受保护的。" class="headerlink" title="使用单下划线“”开头的模块变量或者函数是受保护的。"></a>使用单下划线“<em>”开头的模块变量或者函数是受保护的。</em></h6></li>
+<li><h6 id="使用双下划线“-”开头的实例变量或方法是类私有的。"><a href="#使用双下划线“-”开头的实例变量或方法是类私有的。" class="headerlink" title="使用双下划线“_”开头的实例变量或方法是类私有的。"></a>使用双下划线“_”开头的实例变量或方法是类私有的。</h6></li>
+</ul>
+<h3 id="规范"><a href="#规范" class="headerlink" title="规范"></a>规范</h3><ul>
+<li><strong>类名用单词首字母大写的形式</strong></li>
+<li><strong>函数和方法名用小写字母加下划线</strong></li>
+<li><strong>模块和包的名称用小写字母</strong></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2021/03/30/python/">http://example.com/2021/03/30/python/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/03/30/%E5%AE%89%E8%A3%85halo%E5%8D%9A%E5%AE%A2/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/2021/03/30/mysql/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python"><span class="toc-number">1.</span> <span class="toc-text">python</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E7%9A%84%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">python的概述</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#CPytho-%E5%8E%9F%E5%A7%8B%E7%9A%84%EF%B9%91%E6%A0%87%E5%87%86%E7%9A%84Python%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.0.0.0.1.</span> <span class="toc-text">CPytho  原始的﹑标准的Python实现方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#JythonPython-%E5%9C%A8Java%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.0.0.0.2.</span> <span class="toc-text">JythonPython  在Java环境中的实现方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#lronPytho-Python%E5%9C%A8%E5%BE%AE%E8%BD%AF%E7%9A%84-NET%E5%B9%B3%E5%8F%B0%E4%B8%8A%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.0.0.0.3.</span> <span class="toc-text">lronPytho      Python在微软的.NET平台上的实现方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#PyPy-%E7%94%A8Python%E5%AE%9E%E7%8E%B0%E7%9A%84Python%E8%A7%A3%E9%87%8A%E5%99%A8"><span class="toc-number">1.1.0.0.0.4.</span> <span class="toc-text">PyPy   用Python实现的Python解释器</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#lPython-%E5%9F%BA%E4%BA%8ECPython%E4%B9%8B%E4%B8%8A%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%A7%A3%E9%87%8A%E5%99%A8"><span class="toc-number">1.1.0.0.0.5.</span> <span class="toc-text">lPython    基于CPython之上的一个交互式解释器</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">python基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83"><span class="toc-number">1.2.1.</span> <span class="toc-text">命名规范</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%90%8D%E5%B0%BD%E9%87%8F%E7%9F%AD%E5%B0%8F%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%A8%E9%83%A8%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%EF%BC%8C%E4%B8%8D%E9%BC%93%E5%8A%B1%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E3%80%82"><span class="toc-number">1.2.1.0.0.1.</span> <span class="toc-text">模块名尽量短小，并且全部使用小写字母，不鼓励用下划线。</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8C%85%E5%90%8D%E5%B0%BD%E9%87%8F%E7%9F%AD%E5%B0%8F%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%A8%E9%83%A8%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%EF%BC%8C%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E3%80%82"><span class="toc-number">1.2.1.0.0.2.</span> <span class="toc-text">包名尽量短小，并且全部使用小写字母，不推荐使用下划线。</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%B1%BB%E5%90%8D%E9%87%87%E7%94%A8%E5%8D%95%E8%AF%8D%E9%A6%96%E5%AD%97%E6%AF%8D%E5%A4%A7%E5%86%99%E5%BD%A2%E5%BC%8F-%E5%A4%A7%E5%86%99%E9%A9%BC%E5%B3%B0-%E3%80%82ThreadMixIn%E3%80%81BrokenBarrierError"><span class="toc-number">1.2.1.0.0.3.</span> <span class="toc-text">类名采用单词首字母大写形式(大写驼峰)。ThreadMixIn、BrokenBarrierError</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%86%85%E9%83%A8%E7%9A%84%E7%B1%BB%E9%87%87%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E2%80%9C-%E2%80%9D-Pascal%E9%A3%8E%E6%A0%BC%E7%9A%84%E7%B1%BB%E5%90%8D%E7%BB%84%E6%88%90%E3%80%82-BorrowBook"><span class="toc-number">1.2.1.0.0.4.</span> <span class="toc-text">模块内部的类采用下划线“_”+Pascal风格的类名组成。_BorrowBook</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E3%80%81%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99%E5%90%8C%E6%A8%A1%E5%9D%97%E7%B1%BB%E4%BC%BC-%E4%BD%86%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E5%88%86%E9%9A%94%E5%A4%9A%E4%B8%AA%E5%8D%95%E8%AF%8D%E3%80%82"><span class="toc-number">1.2.1.0.0.5.</span> <span class="toc-text">函数、类的属性和方法的命名规则同模块类似,但可以使用下划线分隔多个单词。</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F%E5%91%BD%E5%90%8D%E6%97%B6%E9%87%87%E7%94%A8%E5%85%A8%E9%83%A8%E5%A4%A7%E5%86%99%E5%AD%97%E6%AF%8D%EF%BC%8C%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E3%80%82PIE"><span class="toc-number">1.2.1.0.0.6.</span> <span class="toc-text">常量命名时采用全部大写字母，不推荐使用下划线。PIE</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%BB%BA%E8%AE%AE%E9%87%87%E7%94%A8%E5%85%A8%E9%83%A8%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D-%E5%8F%AF%E4%BB%A5%E6%9C%89%E6%95%B0%E5%AD%97%EF%BC%89%E5%91%BD%E5%90%8D%E3%80%82"><span class="toc-number">1.2.1.0.0.7.</span> <span class="toc-text">变量建议采用全部小写字母(可以有数字）命名。</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%8B%E5%88%92%E7%BA%BF%E2%80%9C%E2%80%9D%E5%BC%80%E5%A4%B4%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8F%98%E9%87%8F%E6%88%96%E8%80%85%E5%87%BD%E6%95%B0%E6%98%AF%E5%8F%97%E4%BF%9D%E6%8A%A4%E7%9A%84%E3%80%82"><span class="toc-number">1.2.1.0.0.8.</span> <span class="toc-text">使用单下划线“”开头的模块变量或者函数是受保护的。</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%8F%8C%E4%B8%8B%E5%88%92%E7%BA%BF%E2%80%9C-%E2%80%9D%E5%BC%80%E5%A4%B4%E7%9A%84%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E6%88%96%E6%96%B9%E6%B3%95%E6%98%AF%E7%B1%BB%E7%A7%81%E6%9C%89%E7%9A%84%E3%80%82"><span class="toc-number">1.2.1.0.0.9.</span> <span class="toc-text">使用双下划线“_”开头的实例变量或方法是类私有的。</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%84%E8%8C%83"><span class="toc-number">1.2.2.</span> <span class="toc-text">规范</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/30/%E5%AE%89%E8%A3%85halo%E5%8D%9A%E5%AE%A2/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/03/30/%E5%AE%89%E8%A3%85halo%E5%8D%9A%E5%AE%A2/" title="No title">No title</a><time datetime="2021-03-30T13:54:07.809Z" title="Created 2021-03-30 21:54:07">2021-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/30/python/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/03/30/python/" title="No title">No title</a><time datetime="2021-03-30T13:54:07.808Z" title="Created 2021-03-30 21:54:07">2021-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/30/mysql/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/03/30/mysql/" title="No title">No title</a><time datetime="2021-03-30T13:54:07.807Z" title="Created 2021-03-30 21:54:07">2021-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/30/%E8%85%BE%E8%AE%AF%E4%BA%91/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/03/30/%E8%85%BE%E8%AE%AF%E4%BA%91/" title="No title">No title</a><time datetime="2021-03-30T13:54:07.806Z" title="Created 2021-03-30 21:54:07">2021-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/03/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="No title">No title</a><time datetime="2021-03-30T13:54:07.805Z" title="Created 2021-03-30 21:54:07">2021-03-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
